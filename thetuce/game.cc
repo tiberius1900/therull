@@ -27,7 +27,7 @@ Game::Start(int argc, char** argv) {
     
 
 
-  Run();
+  return Run();
 }
 
 Game::GetOptions(int argc, char** argv) {
