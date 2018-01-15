@@ -43,12 +43,12 @@ struct GameModeOptions {
  
 class Game {
  public:
-  void Start(int argc, char** argv);
+  int Start(int argc, char** argv);
   
  private:
   GameOptions GetOptions(int argc, char** argv);
   GameModeOptions SetDefaultGameModeOptions();
-  void Run();
+  int Run();
 
   Board game_board_;
   GameOptions game_options_;
